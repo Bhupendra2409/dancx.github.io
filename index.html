@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DancX</title>
+    
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/styleres.css">
+   
+</head>
+<body>
+   <div id="frontpage">
+       <nav id="navbar">
+           <ul id="navele">
+               <li class="navitem"><a href="/">Home</a></li>
+               <li class="navitem"><a href="/">Contact Us</a></li>
+               <li class="navitem"><a href="/">About</a></li>
+               <li class="navitem"><a href="/">Services</a></li>
+           </ul>
+           <img src="static/img/toggle.png" alt="" id="toggle" onclick="togglefun()">
+       </nav>
+       <div id="togbar">
+           <div id="closeicon">
+               <img src="static/img/closeicon.png" onclick="togglefun()" alt="">
+           </div>
+           <ul id="togul">
+               <li class="tognavitem">Home</li>
+               <li class="tognavitem">About</li>
+               <li class="tognavitem">Contact Us</li>
+               <li class="tognavitem">Services</li>
+           </ul>
+       </div>
+       <section id="welmsg" style="white-space: nowrap;">
+           <div id="styleboxwelmsg1"></div>
+           <div id="styleboxwelmsg2"></div>
+           <div id="styleboxwelmsg3"></div>
+           <div id="styleboxwelmsg4"></div>
+           Dance <br>
+           Like never before
+       </section>
+       <section id="joinusbtndiv">
+           <button id="joinusbtn">
+               Join DancX
+           </button>
+       </section>
+   </div> 
+   <div class="formerceo bdr">
+       <div id="styleboxtr"></div>
+       <div id="styleboxl"></div>
+       <div id="remoimg"><img src="static/img/remoimg.png" alt=""></div>
+       <div id="remointro">
+           <div id="remoname">
+               Remo D'Souza
+           </div>
+           <div id="remopos">
+               Former CEO
+           </div>
+       </div>
+       <div id="remotext">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque inventore adipisci ea dolore harum repellat, rerum veritatis provident similique eaque, laborum ex sunt atque accusantium possimus! Quod, quidem. Tempora pariatur ad vero?
+       </div>
+   </div>
+   <div id="contactuscnt">
+       <div id="contactustext">Contact Us</div>
+       <div id="contactusform">
+           <form action="/contact" method="POST" id="myform">
+            <div class="inputcnt">
+                <img src="static/img/nameicon.png" class="formicon" alt="">
+                <input type="text" required class="myinput" name="name" placeholder="Enter your name">
+            </div>
+            <div class="inputcnt">
+                <img src="static/img/emailicon.png" class="formicon" alt="">
+                <input type="email" required class="myinput" name="email" placeholder="Enter your email">
+            </div>
+            <div class="inputcnt">
+                <img src="static/img/msgicon.png" class="formicon" id="msgicon" alt="">
+                <textarea name="msg" type="text" class="myinput" id="msg" placeholder="What's your concern?" rows="4"></textarea>
+            </div>
+            </form>
+       </div>
+       <div id="submitbtncnt">
+           <button type="submit" form="myform">Submit</button>
+       </div>
+       <div id="contactusillcnt">
+           <img src="static/img/contactus.png" id="contactusill" alt="">
+       </div>
+   </div>
+   <script src="static/index.js"></script>
+</body>
+</html>
